@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header>
       <Container>
-        <a href="/" class={styles.logo}>
+        <a href="/" className={styles.logo}>
           Fun with Triangles
         </a>
         <Hamburger

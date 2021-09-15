@@ -31,9 +31,96 @@ code {
   width: 90%;
   margin: auto;
   max-width: 1152px;
-  height: 60px;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.input_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 300px;
+}
+
+.input_container:nth-child(0) {
+  margin-top: 0;
+}
+
+.label {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px 0px #ddd;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  color: white;
+  background: hsl(210, 100%, 56%);
+  padding: 1rem;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.btn:focus,
+.btn:hover,
+.btn:active {
+  background: hsl(210, 100%, 50%);
+}
+
+.output {
+  border: 1px solid dodgerblue;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: dodgerblue;
+  max-width: 300px;
+}
+
+.triangle_app h1 {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.radio-group {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.radio-paragraph {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.input-radio {
+  cursor: pointer;
 }

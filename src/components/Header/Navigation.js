@@ -13,13 +13,13 @@ const Navigation = ({ classes, isMobileMenuOpen }) => {
     <nav className={classes}>
       <ul>
         <li
-          class={`${styles.listItem} ${pathname === "/" && styles.active}`}
+          className={`${styles.listItem} ${pathname === "/" && styles.active}`}
           onClick={() => goTo("/")}
         >
           Quiz
         </li>
         <li
-          class={`${styles.listItem} ${
+          className={`${styles.listItem} ${
             pathname === "/is-triangle" && styles.active
           }`}
           onClick={() => goTo("is-triangle")}
@@ -27,7 +27,7 @@ const Navigation = ({ classes, isMobileMenuOpen }) => {
           Is Triangle
         </li>
         <li
-          class={`${styles.listItem} ${
+          className={`${styles.listItem} ${
             pathname === "/hypotenuse" && styles.active
           }`}
           onClick={() => goTo("hypotenuse")}
@@ -35,7 +35,9 @@ const Navigation = ({ classes, isMobileMenuOpen }) => {
           Hypotenuse
         </li>
         <li
-          class={`${styles.listItem} ${pathname === "/area" && styles.active}`}
+          className={`${styles.listItem} ${
+            pathname === "/area" && styles.active
+          }`}
           onClick={() => goTo("area")}
         >
           Area of Triangle
